@@ -1,0 +1,21 @@
+{
+  "name": "briefly",
+  "version": "1.0.0",
+  "description": "Chrome extension: on-device page summaries with a small local LLM",
+  "scripts": {
+    "postinstall": "mkdir -p src/vendor && cp node_modules/@huggingface/transformers/dist/transformers.min.js node_modules/onnxruntime-web/dist/ort-wasm-simd-threaded.asyncify.mjs node_modules/onnxruntime-web/dist/ort-wasm-simd-threaded.asyncify.wasm src/vendor/",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-ankita:AnkitaVekariya/Briefly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "4.3.0"
+  },
+  "private": true
+}

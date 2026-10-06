@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Briefly</title>
+  <style>
+    :root { color-scheme: light dark; font: 14px/1.5 system-ui, sans-serif; }
+    body { margin: 0; padding: 16px; display: grid; gap: 12px; }
+    h1 { margin: 0; font-size: 18px; }
+    button { font: inherit; padding: 6px 10px; cursor: pointer; }
+    #status { font-size: 12px; opacity: .7; min-height: 1.5em; }
+    #output { white-space: pre-wrap; }
+    #status, #output { overflow-wrap: anywhere; } /* long error paths would widen the panel */
+  </style>
+</head>
+<body>
+  <h1>Briefly</h1>
+  <button id="go">Summarize this page</button>
+  <div id="status" role="status"></div>
+  <div id="output" aria-live="polite"></div>
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
